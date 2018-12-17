@@ -32,3 +32,13 @@ class RestaurantCreateUpdateSerializer(serializers.ModelSerializer):
             'opening_time',
             'closing_time',
             ]
+
+class CreateSerializer(serializers.ModelSerializer):
+     class Meta:
+        model = Restaurant
+        fields = [
+            'name',
+            'description',
+            'opening_time',
+            'closing_time',
+            ]
